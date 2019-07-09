@@ -2,10 +2,7 @@ import { MongoClient } from 'mongodb';
 import {UserService} from './services/user.service';
 import * as _ from 'lodash';
 
-export const DB_URL = 'mongodb://cleanspot:WyXDVH24azgDJSd@cleanspot-shard-00-00-3vdga.mongodb.net:27017' +
-    ',cleanspot-shard-00-01-3vdga.mongodb.net:27017,cleanspot-shard-00-02-3vdga.mongodb.net:27017/test?ssl' +
-    '=true&replicaSet=CleanSpot-shard-0&authSource=admin&retryWrites=true';
-
+export const DB_URL = '';
 export class DB {
   public static create(url?: string): Promise<any> {
     return new Promise((resolve, reject) => {

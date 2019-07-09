@@ -1,10 +1,10 @@
 import * as express from 'express';
 import * as Parser from 'body-parser';
 import * as cors from 'cors';
-import {DB} from '../db/DB';
 import {UserApi} from './api/user.api';
 import {BaseApi} from './api/base.api';
 import {SessionApi} from './session/session.api';
+import {DB} from '../db/db';
 
 export class Server {
 

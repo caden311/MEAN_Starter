@@ -1,12 +1,12 @@
 {
-  "name": "cleanspotmongo",
+  "name": "MeanStarter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --watch",
-    "serve": "cd ./client; ng serve -- open"
+    "serve": "cd ./client; npm run start"
   },
   "author": "",
   "license": "ISC",

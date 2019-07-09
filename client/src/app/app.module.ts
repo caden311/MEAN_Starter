@@ -1,13 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {RouterModule} from '@angular/router';
-import {HomeComponent} from './main/home/home.component';
-import {HomeModule} from './main/home/home.module';
-import {DocumentsModule} from './main/documents/documents.module';
-import {DocumentsComponent} from './main/documents/documents.component';
-
 
 @NgModule({
   declarations: [
@@ -15,13 +10,7 @@ import {DocumentsComponent} from './main/documents/documents.component';
   ],
   imports: [
     BrowserModule,
-    HomeModule,
-    DocumentsModule,
-    RouterModule.forRoot([
-      {path: '', redirectTo: '/Home', pathMatch: 'full'},
-      {path: 'Documents', component: DocumentsComponent},
-      {path: 'Home', component: HomeComponent}
-      ]),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
