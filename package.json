@@ -18,7 +18,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.3.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "mongodb": "^3.1.8",
     "mongoose": "^5.3.9",
     "password-hash": "^1.2.2",
